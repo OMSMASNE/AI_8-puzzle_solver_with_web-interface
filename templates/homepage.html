@@ -1,0 +1,52 @@
+<!--
+Copyright (c) 2021 OM SANTOSHKUMAR MASNE.
+All Rights Reserved.
+Licensed under the MIT license.
+See LICENSE file in the project root for license information.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 puzzle sovler</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css" />
+    <script src="../static/script.js"></script>
+</head>
+<body>
+    <h1>8 puzzle solver</h1>
+
+    <div id="outer-container">
+        <div id="puzzle-container">
+            <div id="puzzle-board">
+                <div class="puzzle-block" id="puzzle-board-0" data-tile_value=6>6</div>
+                <div class="puzzle-block" id="puzzle-board-1" data-tile_value=1>1</div>
+                <div class="puzzle-block" id="puzzle-board-2" data-tile_value=8>8</div>
+                <div class="puzzle-block" id="puzzle-board-3" data-tile_value=4>4</div>
+                <div class="puzzle-block" id="puzzle-board-4" data-tile_value=0></div>
+                <div class="puzzle-block" id="puzzle-board-5" data-tile_value=2>2</div>
+                <div class="puzzle-block" id="puzzle-board-6" data-tile_value=7>7</div>
+                <div class="puzzle-block" id="puzzle-board-7" data-tile_value=3>3</div>
+                <div class="puzzle-block" id="puzzle-board-8" data-tile_value=5>5</div>
+            </div>
+        </div>
+
+        <div id="solution-container">
+            <h2 id="solution-placeholder">Solution appears here.</h2>
+            <div class="loader" id="loader" style="display: none;"></div>
+            <div id="solution-box"></div>
+        </div>
+    </div>
+
+    <div id="solution-manager">
+        <button class="solution-btn" id="get-solution">Get Solution using AST</button>
+
+        <button class="solution-btn" id="play-solution">Play Solution</button>
+
+        <button class="solution-btn" id="new-board">New Board</button>
+    </div>
+
+</body>
+</html>

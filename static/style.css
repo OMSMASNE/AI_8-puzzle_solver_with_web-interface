@@ -1,0 +1,128 @@
+/*
+Copyright (c) 2021 OM SANTOSHKUMAR MASNE.
+All Rights Reserved.
+Licensed under the MIT license.
+See LICENSE file in the project root for license information.
+*/
+
+body
+{
+    text-align: center;
+}
+
+.loader
+{
+    border: 10px solid white;
+    border-top: 10px solid dodgerblue;
+    border-bottom: 10px solid dodgerblue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+#outer-container
+{
+    display: flex;
+}
+
+#puzzle-container
+{
+    padding: 20px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+#puzzle-board
+{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: rgb(0, 119, 255);
+}
+
+.puzzle-block
+{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(190, 218, 255);
+    font-size: 4rem;
+}
+
+#solution-container
+{
+    height: 50vh;
+    margin: 20px auto 20px auto;
+    overflow-y: auto;
+    text-align: justify;
+    border: 2px solid black;
+    padding: 5px;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#solution-box
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.solution-element
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid gray;
+    width: fit-content;
+    height: fit-content;
+    margin: 5px 4px 5px 4px;
+    padding: 1px;
+}
+
+.solution-element.selected
+{
+    border: 4px solid black;
+    font-weight: bold;
+}
+
+#solution-manager
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.solution-btn
+{
+    background-color: transparent;
+    border: 5px solid dodgerblue;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    margin-bottom: 50px;
+}
+
+.solution-btn:hover
+{
+    background-color: transparent;
+    border: 8px solid rgb(0, 128, 255);
+    font-size: 2.5rem;
+    cursor: pointer;
+}
